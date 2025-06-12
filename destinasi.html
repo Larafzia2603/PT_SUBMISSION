@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi Wisata Sulawesi Tengah</title>
+    <link rel="stylesheet" href="/css/destinasi.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinasi.html">Destinasi Wisata</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header dengan Gambar Utama -->
+    <header>
+        <div class="container">
+            <h1>Destinasi Wisata Sulawesi Tengah</h1>
+            <p>Temukan Keindahan Tersembunyi di Jantung Pulau Sulawesi</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="filter-section">
+            <h2>Filter Sederhana</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="Pantai">Pantai</button>
+                <button class="filter-btn" data-category="Air Terjun">Air Terjun</button>
+                <button class="filter-btn" data-category="Danau">Danau</button>
+                <button class="filter-btn" data-category="Bukit">Bukit</button>
+                <button class="filter-btn" data-category="Pulau">Pulau</button>
+            </div>
+        </section>
+
+        <section class="destinations">
+           <!-- Destination Card 1 -->
+            <div class="destination-card" data-category="Danau">
+                <img src="https://asset-2.tstatic.net/travel/foto/bank/images/Pemandangan-Danau-Tambing-di-Desa-Sedoa-Lore-Utara-Poso-Sulawesi-Tengah.jpg" alt="Danau Tambing">
+                <div class="card-content">
+                    <h3>Danau Tambing</h3>
+                    <p class="description">Surga tersembunyi di kaki Gunung Nokilalaki yang sejuk dan penuh burung endemik</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 2,5 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 06.00–18.00</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/danautambing')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Destination Card 2 -->
+            <div class="destination-card" data-category="Air Terjun">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.rxEn64C9zmoQXithlrmFWAHaFj?rs=1&pid=ImgDetMain" alt="Air terjun saluopa" alt="Air Terjun Saluopa">
+                <div class="card-content">
+                    <h3>Air Terjun Saluopa</h3>
+                    <p class="description">Air terjun bertingkat dengan pemandangan alam yang memukau</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-hiking"></i> Trekking 30 menit</span>
+                        <span><i class="fas fa-swimming-pool"></i> Kolam alami</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/saluopa')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 3: Paisupok -->
+            <div class="destination-card" data-category="Danau">
+                <img src="https://i.ytimg.com/vi/Sza-GxrXKbk/maxresdefault.jpg" alt="Paisupok Banggai">
+                <div class="card-content">
+                    <h3>Paisupok, Banggai</h3>
+                    <p class="description">Laguna tersembunyi dengan air biru jernih di Kabupaten Banggai</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 6 jam dari Luwuk</span>
+                        <span><i class="far fa-clock"></i> Buka 08.00 - 17.00</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/paisupok')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 4: Puncak Salena -->
+            <div class="destination-card" data-category="Bukit">
+                <img src="https://travellingindonesia.com/wp-content/uploads/2023/06/Puncak-Bukit-Salena.jpeg" alt="Puncak Salena">
+                <div class="card-content">
+                    <h3>Puncak Salena</h3>
+                    <p class="description">Puncak bukit dengan pemandangan kota Palu dan kabut yang memesona</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 1 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 24 jam</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/puncaksalena')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 5 -->
+            <div class="destination-card" data-category="Danau">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.rZb7CKMTNLDn0k-Z4sNkrgHaE7?rs=1&pid=ImgDetMain" alt="Danau Poso">
+                <div class="card-content">
+                    <h3>Danau Poso</h3>
+                    <p class="description">Danau terdalam ketiga di Indonesia dengan pasir putih</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-ship"></i> 5 jam dari palu</span>
+                        <span><i class="fas fa-sun"></i> Sunrise terbaik</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/danauposo')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 6 -->
+            <div class="destination-card" data-category="Pantai">
+                <img src="https://www.djkn.kemenkeu.go.id/files/images/2020/07/ft1.jpeg" alt="Pantai Talise">
+                <div class="card-content">
+                    <h3>Pantai Talise</h3>
+                    <p class="description">Pantai ikonik Kota Palu dengan sunset yang memukau</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-sun"></i> Sunset terbaik</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/pantaitalise')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 7: Pusat Laut Donggala -->
+            <div class="destination-card" data-category="Pantai">
+                <img src="https://1.bp.blogspot.com/-M04ma5g78Mg/XBxY_s37lBI/AAAAAAAADOg/nbHlWi6MWcM1pKwGNEAGYXnLmwl4v7uswCLcBGAs/s1600/Dari-dalam-pusat-laut.jpg" alt="Pusat Laut Donggala">
+                <div class="card-content">
+                    <h3>Pusat Laut, Donggala</h3>
+                    <p class="description">Lubang raksasa alami dengan air laut jernih di Donggala</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 2 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 08.00 - 18.00</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/pusatlaut')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 8: Pantai Sausu Tambu -->
+            <div class="destination-card" data-category="Pantai">
+                <img src="https://i.ytimg.com/vi/CQQOoDzsVcY/hqdefault.jpg">
+                <div class="card-content">
+                    <h3>Pantai Sausu Tambu</h3>
+                    <p class="description">Pantai indah dengan pasir putih di Parigi Moutong</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 4 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 06.00 - 18.00</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/pantaitambu')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination Card 9: Matantimali -->
+            <div class="destination-card" data-category="Bukit">
+                <img src="https://pariwisata.sultengprov.go.id/images/DTWdonggala/NOMINATOR_INSTAGRAM_ARNOLD_KEINDAHAN_ALAM_PAGI_HARI_MATNTIMALI_SIGI.jpg" alt="Matantimali">
+                <div class="card-content">
+                    <h3>Matantimali</h3>
+                    <p class="description">Tempat paralayang favorit dengan pemandangan pegunungan Palu</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 1.5 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 24 jam</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/matantimali')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 10: Air Terjun Piala -->
+            <div class="destination-card" data-category="Air Terjun">
+                <img src="https://jateng.disway.id/upload/da2fe161fc6430d1b4f1c485983f15ac.png" alt="Air Terjun Piala">
+                <div class="card-content">
+                    <h3>Air Terjun Piala</h3>
+                    <p class="description">Air terjun unik dengan bentuk seperti piala di Morowali Utara</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 4 jam dari Kolonodale</span>
+                        <span><i class="far fa-clock"></i> Buka 08.00 - 17.00</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/airterjunpiala')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 11 -->
+            <div class="destination-card" data-category="Pantai">
+                <img src="https://superlive.id/storage/superadventure/2018/05/21/7702e0279fab.jpg" alt="Teluk Tomini">
+                <div class="card-content">
+                    <h3>Teluk Tomini</h3>
+                    <p class="description">Teluk terbesar di Indonesia dengan pulau-pulau tropis dan surga bawah laut</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 8 jam dari Palu</span>
+                        <span><i class="far fa-clock"></i> Buka 24 jam</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/teluktomini')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 12 -->
+            <div class="destination-card" data-category="Pulau">
+                <img src="https://4.bp.blogspot.com/-yqDdmavxc9M/VNV1idnw7-I/AAAAAAAAD-Y/t0YA1yOGdt0/s1600/pulau-kadidiri-2.jpg" alt="Pulau Kadidiri">
+                <div class="card-content">
+                    <h3>Pulau Kadidiri</h3>
+                    <p class="description">Pulau tropis di Kepulauan Togean dengan pasir putih dan spot menyelam eksotis</p>
+                    <div class="info-icons">
+                        <span><i class="fas fa-car"></i> 10 jam dari Palu + Kapal</span>
+                        <span><i class="far fa-clock"></i> Buka 24 jam</span>
+                    </div>
+                    <button class="more-btn" onclick="moveToDetail('../wisata/pulaukadidiri')">Lihat Detail <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Batch Soyuz Programing Tadulako</p>
+    </footer>
+
+    <script src="js/destinasi.js"></script>
+</body>
+</html>
