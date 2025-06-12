@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Pesona Sulteng</title>
+  <link rel="stylesheet" href="/css/kontak.css"/>
+</head>
+<body>
+
+  <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinasi.html">Destinasi Wisata</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header dengan Gambar Utama -->
+    <header>
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Hubungi Kami untuk mendapatkan wisata impian anda</p>
+        </div>
+    </header>
+
+    <main class="container">
+      <!-- Profile Team -->
+    <section class="team-profile">
+      <h2>Tim Kami</h2>
+      <div class="profile-container">
+        <div class="profile-card">
+          <img src="img/febri.jpg" alt="Team Member 1">
+          <h3>Febriansyah</h3>
+          <div class="contact-info">
+            <p>Email: andi@Febriansyah.com</p>
+            <p>WhatsApp: 0812-3456-7890</p>
+            <p>Instagram:<a href="https://www.instagram.com/febriansyahh27_?igsh=MXd6Z3ByOTdlenh6cg=="target="_blank">@febriansyahh27_</a></p>
+          </div>
+        </div>
+        
+        <div class="profile-card">
+          <img src="img/lara.jpg">
+          <h3>Lara Fauzia</h3>
+          <div class="contact-info">
+            <p>Email: Larafzia26@gmail.com</p>
+            <p>WhatsApp: 082-4542-4987</p>
+            <p>Instagram: <a href="https://www.instagram.com/_larafzia/"target="_blank">@_larafzia</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Batch Soyuz Programing Tadulako</p>
+  </footer>
+  <script>
+  // Menampilkan alert saat pengguna mengklik link Instagram
+  const links = document.querySelectorAll('.contact-info a');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      alert("Anda akan diarahkan ke Instagram.");
+    });
+  });
+  </script>
+</body>
+</html>
