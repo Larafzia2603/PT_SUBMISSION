@@ -261,3 +261,9 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
+@media(max-width: 480px){
+    header{
+        padding:20px
+    }
+}
