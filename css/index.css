@@ -209,11 +209,6 @@ footer {
 
 /* Untuk layar max 768px (Tablet & Small Devices) */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        height: auto;
-    }
-
     .highlight-card {
         width: 100%;
     }
@@ -251,23 +246,6 @@ footer {
 
     .category-box {
         width: 80%;
-    }
-
-    .btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header p {
-        font-size: 0.9rem;
     }
 }
 
