@@ -1,10 +1,16 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Font */
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* ===== NAVIGATION STYLES ===== */
@@ -18,7 +24,6 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style: none;
