@@ -193,3 +193,83 @@ footer {
     margin-top: 2rem;
 }
 
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Untuk layar max 1024px (Tablet & Medium Screen) */
+@media (max-width: 1024px) {
+    .highlight-card {
+        width: 45%;
+    }
+
+    .category-box {
+        width: 18%;
+        padding: 1rem 0;
+    }
+}
+
+/* Untuk layar max 768px (Tablet & Small Devices) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .highlight-card {
+        width: 100%;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .category-box {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* Untuk layar max 480px (Smartphone) */
+@media (max-width: 480px) {
+    .highlight-card {
+        width: 100%;
+    }
+
+    .category-box {
+        width: 80%;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
