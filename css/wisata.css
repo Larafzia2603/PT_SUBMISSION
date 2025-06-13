@@ -1,24 +1,16 @@
-:root {
-  --color-primary: #1E88E5;    
-  --color-secondary: #3498db;   
-  --color-accent: #2980b9;  
-  --color-background: #ffffff;  
-  --color-surface: #f5f7fa;   
-  --color-text: #2c3e50;  
-  --color-muted: #7f8c8d;     
-  --color-shadow: rgba(0, 0, 0, 0.1); 
-}
-
+/* ===== GLOBAL STYLES ===== */
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  color: var(--text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
+/* Font */
+body {
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--background);
+    line-height: 1.6;
+    color: #333;
 }
 
 nav {
@@ -120,48 +112,3 @@ footer {
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 767px) {
-  nav {
-    align-items: center;
-    justify-content: center;
-    z-index: 9999999;
-    flex-direction: column;
-    height: auto;
-  }
-
-  main {
-    margin: 140px 40px 20px 40px;
-
-    .title {
-      flex-direction: column;
-    }
-
-    .cardholder {
-      a {
-        .card {
-          flex-direction: column;
-
-          img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-          }
-        }
-      }
-    }
-    .cardtext {
-      flex-direction: column;
-      margin: 0px;
-      padding: 0px;
-
-      .desc {
-        margin: 0px 0px 10px 0px;
-      }
-    }
-  }
-
-  footer {
-    margin: 0px 40px;
-    text-align: center;
-  }
-}
